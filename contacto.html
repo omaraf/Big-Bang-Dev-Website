@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Big Bang Dev</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/mainstyle.css" media="all">
+<link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script src="js/jquery.anchor.js" type="text/javascript"></script>
+<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDx5Zwxc64Rsaum78BTCW09AL4VvrNw1d8&sensor=false">
+</script>
+<script type="text/javascript">
+      function initialize() {
+        var myOptions = {
+          center: new google.maps.LatLng(29.12335, -110.96041),
+          zoom: 16,
+          panControl: true,
+          zoomControl: true,
+          scaleControl: true,
+          scrollwheel: false,
+          zoomControlOptions: {
+              style: google.maps.ZoomControlStyle.LARGE
+          },
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        
+        
+        
+        $("#map_canvas").width = window.innerWidth;
+        $("#map_canvas").height = window.innerHeight;
+        
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+            
+        var image = new google.maps.MarkerImage('img/pin-ubicanos.png',
+             new google.maps.Size(342, 150),
+             new google.maps.Point(0,0),
+             new google.maps.Point(0,110));
+	    var myLatLng = new google.maps.LatLng(29.1233737, -110.960433);
+	    var beachMarker = new google.maps.Marker({
+	        position: myLatLng,
+	        map: map,
+	        icon: image,
+	        clickable:false
+	    });
+      }
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30017975-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="initialize()">
+<script type="text/javascript" src="js/main_bbd.js"></script>
+	<div class="contact_start_section">
+	<a name="anchorTargetTop" id="anchorTargetTop"></a>
+		<div class="content_margin">
+			<div class="top_banner"></div>
+			<div class="header">
+				<div class="logo inner-sec-logo">
+					<a href="index.html"><img src="img/mainLogo.png" alt="Big Bang Dev Logo"></a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="index.html?target=servicios" >Servicios</a></li>
+						<li><a href="index.html?target=portafolio">Portafolio</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mapa_contacto" id="map_canvas">
+		</div>
+	</div>
+	
+	<div class="info_section">
+		<div class="content_margin">
+			
+			<div class="contact-section-main">
+				<div class="contact-info">
+					<h1 class="contact-area-titles">PONTE EN CONTACTO</h1>
+					
+					<h3>TELÉFONO:</h3>
+					<h4>662.210.5112</h4>
+					<h3>EMAIL:</h3>
+					<h4>contacto@bigbangdev.com</h4>
+					<h3>DIRECCIÓN:</h3>
+					<h4>Plan de Agua Prieta 108<br>
+					Col. Misión del Sol 83100<br>
+					Hermosillo, Sonora, México<br></h4>
+					
+				</div>
+				<div class="contact-form">
+					<h1 class="contact-area-titles">ENVÍA UN MENSAJE</h1>
+					<p>Escríbenos si tienes algún proyecto en mente, alguna pregunta o sólo deseas saludar.</p>
+					<div class="form_fields">
+						<form id="form_contacto" action="mailform.php" method="post">
+							<fieldset>
+								<label for="name" id="label_name">Nombre*</label>
+								<input type="text" name="name" id="name" placeholder="" />
+								
+								<label for="city">Ciudad</label>
+								<input type="text" name="city" id="city" placeholder="" />
+								
+								<label for="telephone">Teléfono</label>
+								<input type="text" name="telephone" id="telephone" placeholder="" />
+													
+								<label for="email" id="label_email">E-mail*</label>
+								<input type="email" name="email" id="email" placeholder="" />
+					
+								<label for="message" id="label_message">Mensaje*</label>
+								<textarea id="message" name="message" placeholder=""></textarea>
+								
+								<label for="capth" id="numb_capth">2 + 2 = ?*</label>
+								<input type="text" name="capth" id="capth" placeholder="Responde si no eres robot." />
+					
+								<a href="javascript:void(0)" id="button_submit">Enviar</a>
+					
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer_section">
+		<div class="content_margin">
+			<div class="footer">
+				<div class="back-top">
+					<a href="#anchorTargetTop" class="anchorLink">Arriba</a>
+				</div>
+				<div class="bottom_dir">
+					<div class="title_contacto">
+						<h3>ENCUÉNTRANOS EN</h3>
+					</div>
+					<div class="contacto_info">
+						<p>
+						Plan de Agua Prieta 108<br>
+						Col. Misión del Sol 83100<br>
+						Hermosillo, Sonora, México<br>
+						<br>
+						<span class="strong-text">Tel:  </span>  + 52 662.210.5112<br>
+						<span class="strong-text">Email:</span> contacto@bigbangdev.com<br>
+						<span class="strong-text">Soporte:</span> soporte@bigbangdev.com<br>
+						</p>
+					</div>
+				</div>
+				<div class="bottom_social">
+					<div class="title_contacto">
+						<h3 id="sig_space">SÍGUENOS</h3>
+					</div>
+					<div class="social-imags">
+						<a href="http://twitter.com/bigbangdev"><img class="soc-img" src="img/IconSocialTwitter.png"></a>
+						<a href="http://facebook.com/bigbangdev"><img class="soc-img" src="img/IconSocialFacebook.png"></a>
+						<a href="http://flickr.com/photos/bigbangdev/"><img class="soc-img" src="img/IconSocialFlickr.png"></a>
+						<a href="http://www.linkedin.com/company/big-bang-dev"><img class="soc-img" src="img/IconSocialLinkedin.png"></a>
+						
+					</div>
+				</div>
+				<div class="soporte_info">
+				<a href="http://bigbangdev.com"><img class="soc-img" src="img/bbdlogolp.png"></a>
+				</div>
+				<div class="menu menu-bottom">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="index.html?target=servicios">Servicios</a></li>
+						<li><a href="index.html?target=portafolio">Portafolio</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+</html>

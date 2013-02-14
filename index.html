@@ -11,71 +11,53 @@
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/mainstyle.css" media="all">
 <link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />
-<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.form.js"></script>
-<script type="text/javascript" src="js/mosaic.1.0.1.min.js"></script>
-<script src="js/jquery.anchor.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/main_bbd.js"></script>
-<script type="text/javascript">  
-			
-			jQuery(function($){
-				
-				$('.circle').mosaic({
-					opacity		:	0.8			//Opacity for overlay (0-1)
-				});
-				
-				$('.fade').mosaic();
-				
-				$('.bar').mosaic({
-					animation	:	'slide'		//fade or slide
-				});
-				
-				$('.bar2').mosaic({
-					animation	:	'slide'		//fade or slide
-				});
-				
-				$('.bar3').mosaic({
-					animation	:	'slide',	//fade or slide
-					anchor_y	:	'top'		//Vertical anchor position
-				});
-				
-				$('.cover').mosaic({
-					animation	:	'slide',	//fade or slide
-					hover_x		:	'400px'		//Horizontal position on hover
-				});
-				
-				$('.cover2').mosaic({
-					animation	:	'slide',	//fade or slide
-					anchor_y	:	'top',		//Vertical anchor position
-					hover_y		:	'80px'		//Vertical position on hover
-				});
-				
-				$('.cover3').mosaic({
-					animation	:	'slide',	//fade or slide
-					hover_x		:	'400px',	//Horizontal position on hover
-					hover_y		:	'300px'		//Vertical position on hover
-				});
-		    
-		    });
-		    
-		</script>
-		<script type="text/javascript">
-		
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-30017975-1']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		
-		</script>
+<meta name="viewport" content="width=device-width" /> 
+<meta name="keywords" content="Mobile Design, Mobile Development, Development, Mobile, iPhone Development, Desarrollo Móvil, Desarrollo iPhone, Desarrollo Android, Desarrollo Software, Software Development, Hermosillo, Sonora, Hermosillo Sonora, Mexico, Hermosillo Sonora Mexico, Plataformas Móviles, Social Networks, API Development, Cloud, Web Apps, Nube, App Engine, Elastic Computing, Amazon, Amazon EC2, S3">
+<meta name="description" content="Desarrollamos soluciones de software Móvil, Web (o ambos) con el detalle, la innovación y la calidad que busca tu negocio. ">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30017975-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </head>
 
 <body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <div class="nav-collapse collapse">
+        <ul class="nav pull-right">
+          <li><a href="index.html">INICIO</a> </li>
+          <li class="divider-vertical"></li>
+          <li><a href="#anchorTargetServicios" class="anchorLink" id="menu-link-servicios">SERVICIOS</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="#anchorTargetPortafolio" class="anchorLink" id="menu-link-portafolio">PORTAFOLIO</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li class="divider-vertical"></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
 
 	<div class="start_section">
 	<a name="anchorTargetTop" id="anchorTargetTop"></a>
@@ -98,8 +80,11 @@
 			<div class="slider-wrapper theme-default">
 			    <div class="ribbon"></div>
 				<div id="slider" class="nivoSlider">
+				<img src="img/3.jpg" alt=""/>
+				<img src="img/4.jpg" alt=""/>
 				    <img src="img/1.jpg" alt="" />
 				    <img src="img/2.jpg" alt=""/>
+				    <img src="img/5.jpg" alt=""/>
 				</div>
 			</div>
 		</div>
@@ -149,28 +134,28 @@
 								<h3 class="servicios_titles">Redes Sociales</h3>
 								<p class="sub_titles">Somos expertos integrando API's de redes sociales y servicios para mejorar la interacción con los usuarios finales de nuestras aplicaciones. </p>
 							</div>
-							<div class="img_serv_mob" id="maps_serv"></div>
-							<div class="img_serv_mob" id="db_serv"></div>
-							<div class="img_serv_mob" id="fb_serv"></div>
-							<div class="img_serv_mob" id="tw_serv"></div>
+							<div class="img_serv_mob four-boxes" id="maps_serv"></div>
+							<div class="img_serv_mob four-boxes" id="db_serv"></div>
+							<div class="img_serv_mob four-boxes" id="fb_serv"></div>
+							<div class="img_serv_mob four-boxes" id="tw_serv"></div>
 						</div>
 						<div class="cuadro_serv">
 							<div class="serv_expl de_4">
 								<h3 class="servicios_titles">Web Frameworks</h3>
 								<p class="sub_titles">Utilizamos plataformas de desarrollo ágil, gran impacto visual, alcance, extensibilidad y compatibilidad.</p>
 							</div>	
-							<div class="img_serv_mob" id="wordpress_serv"></div>
-							<div class="img_serv_mob" id="micro_serv"></div>
-							<div class="img_serv_mob" id="html_serv"></div>
-							<div class="img_serv_mob" id="django_serv"></div>
+							<div class="img_serv_mob four-boxes" id="wordpress_serv"></div>
+							<div class="img_serv_mob four-boxes" id="micro_serv"></div>
+							<div class="img_serv_mob four-boxes" id="html_serv"></div>
+							<div class="img_serv_mob four-boxes" id="django_serv"></div>
 						</div>
 						<div class="cuadro_serv">
 							<div class="serv_expl">
 								<h3 class="servicios_titles">Cloud Services</h3>
 								<p class="sub_titles">Montamos nuestros sistemas sólo en las manos de los más respetables expertos en computación elástica  y escalable. Tenemos la confianza de que ellos pueden mantener tu proyecto no importa el tamaño con el que lo quieras ver.</p>
 							</div>
-							<div class="img_serv_mob" id="app_en_serv"></div>
-							<div class="img_serv_mob" id="amaz_serv"></div>
+							<div class="img_serv_mob two-boxes" id="app_en_serv"></div>
+							<div class="img_serv_mob two-boxes" id="amaz_serv"></div>
 						</div>
 					</div>
 				</div>
@@ -185,7 +170,7 @@
 					<div class="mosaic-block bar2 sqr_portafolio">
 						<a href="gasolineras.html" target="_self" class="mosaic-overlay">
 							<div class="details">
-								<h3>GASOLINERAS</h3><br/>
+								<h3>GASOLINERAS</h3>
 								<p class="port-brief">Gasolineras ubica a más de 7000 estaciones de servicio en todo México.
 									Permite visualizar de manera condensada y amigable la información que recopila la PROFECO de cada gasolinera y muestra en rojo las que tienen irregularidades en la última revisión.
 								</p>
@@ -198,7 +183,7 @@
 					<div class="mosaic-block bar2 sqr_portafolio">
 						<a href="caffenio.html" target="_self" class="mosaic-overlay">
 							<div class="details">
-								<h3>CAFFENIO</h3><br/>
+								<h3>CAFFENIO</h3>
 								<p class="port-brief">Aplicación que muestra información sobre ubicaciones y productos de una de las empresas de café más importantes de México.<br><br>
 									Descárgala y conoce todo lo que Caffenio ofrece para ti.
 								</p>
@@ -209,9 +194,22 @@
 					</div>
 					
 					<div class="mosaic-block bar2 sqr_portafolio">
+						<a href="bussonora.html" target="_self" class="mosaic-overlay">
+							<div class="details">
+								<h3>BUS SONORA</h3>
+								<p class="port-brief">Herramienta de referencia para usuarios del transporte urbano en Hermosillo, Cd. Obregón y Navojoa. <br>
+									Permite conocer las rutas de estas ciudades y la posición de muchas de las unidades de transporte.
+								</p>
+								<p class="go-to-proj">Ver +</p>
+							</div>
+						</a>
+						<div class="mosaic-backdrop"><img src="img/bs_thm.jpg"/></div>
+					</div>
+					
+					<div class="mosaic-block bar2 sqr_portafolio">
 						<a href="prototiposrapidospuntocom.html" target="_self" class="mosaic-overlay">
 							<div class="details">
-								<h3>PROTOTIPOSRAPIDOS.COM</h3><br/>
+								<h3>PROTOTIPOSRAPIDOS.COM</h3>
 								<p class="port-brief">Sistema Web de pedidos en línea que te permite ordenar la impresión de tus diseños de formáto sólido 3D.<br><br>
 									Desarrollado sobre Django y con tecnologías HTML5.
 									</p>
@@ -221,9 +219,9 @@
 						<div class="mosaic-backdrop"><img src="img/prototipos_portafolio.jpg"/></div>
 					</div>
 					<div class="mosaic-block bar2 sqr_portafolio">
-						<a href="macromemes.html" target="_self" class="mosaic-overlay">
+						<a href="macromemes.html" target="_self" class="mosaic-overlay ">
 							<div class="details">
-								<h3>MACRO MEMES</h3><br/>
+								<h3>MACRO MEMES</h3>
 								<p class="port-brief">Una aplicación divertida y fácil de utilizar para crear memes rápidamente o crear próximo chiste viral de Internet.<br>
 									Utiliza cualquiera de las más de 60 plantillas de memes populares o agrega tus propias fotos.<br><br> 								
 								</p>
@@ -302,6 +300,54 @@
 	</div>
 		
 	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="js/mosaic.1.0.1.min.js"></script>
+	<script src="js/jquery.anchor.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/main_bbd.js"></script>
+	<script type="text/javascript">  
+				
+				jQuery(function($){
+					
+					$('.circle').mosaic({
+						opacity		:	0.8			//Opacity for overlay (0-1)
+					});
+					
+					$('.fade').mosaic();
+					
+					$('.bar').mosaic({
+						animation	:	'slide'		//fade or slide
+					});
+					
+					$('.bar2').mosaic({
+						animation	:	'slide'		//fade or slide
+					});
+					
+					$('.bar3').mosaic({
+						animation	:	'slide',	//fade or slide
+						anchor_y	:	'top'		//Vertical anchor position
+					});
+					
+					$('.cover').mosaic({
+						animation	:	'slide',	//fade or slide
+						hover_x		:	'400px'		//Horizontal position on hover
+					});
+					
+					$('.cover2').mosaic({
+						animation	:	'slide',	//fade or slide
+						anchor_y	:	'top',		//Vertical anchor position
+						hover_y		:	'80px'		//Vertical position on hover
+					});
+					
+					$('.cover3').mosaic({
+						animation	:	'slide',	//fade or slide
+						hover_x		:	'400px',	//Horizontal position on hover
+						hover_y		:	'300px'		//Vertical position on hover
+					});
+			    
+			    });
+			    
+			</script>
 	
 	<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
 	<script type="text/javascript">
@@ -314,7 +360,7 @@
 	    });
 	});
 	</script>
-	
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 

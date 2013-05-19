@@ -46,6 +46,10 @@ h1.less-spacing{
 	line-height:1em !important;
 }
 
+span.italics{
+	font-style: italic;
+}
+
 .content_margin{	width: 1000px;	margin: 0 auto;	 height:100%}
 
 div.start_section{
@@ -403,6 +407,8 @@ div#icon_ndesc{
 	float: left;
 }div#project_title{
 	margin-bottom: 40px;
+}div.big-proyect{
+	margin-bottom: 0px;
 }div#proj_head h2{
 	margin-bottom: 20px;
 }div#proj_head{
@@ -681,6 +687,7 @@ div.contact_start_section{
 div.contact_start_section .content_margin{
 	background-image: url('../img/blackbg.jpg');
 }
+
 
 
 
